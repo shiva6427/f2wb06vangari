@@ -24,11 +24,11 @@ block content
   div(class= "container-fluid")
     div(class = "row")
       each item,index in results
-        div(class= "col-sm-2" , onclick=`buy(${index})`) #{item.Order_Name}
+        div(class= "col-sm-2",  onclick=`buy(${index})`) #{item.Order_Name}
         div(class= "col-sm-2",  onclick=`buy(${index})`) #{item.Order_quantity}
         div(class= "col-sm-2",  onclick=`buy(${index})`) #{item.Order_price}
 
   script.
     function buy(itemNum){
-      alert('The purchased item is ${itemNum+1}')
+      alert(`The purchased item is ${itemNum+1}`)
     }
